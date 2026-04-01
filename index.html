@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Empowerment</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+        scroll-behavior: smooth;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Hamburger menu */
+    .hamburger {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background: #333;
+        transition: 0.3s;
+    }
+
+    /* Menu overlay */
+    .menu {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.97);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+    .menu a {
+        font-size: 2em;
+        margin: 20px 0;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .menu a:hover { color: #ff5733; }
+
+    /* Hero Section */
+    .hero {
+        background: url('https://i.ibb.co/7vT7cP7/mother-child.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero h1 {
+        font-size: 3.5em;
+        margin: 0;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        animation: fadeInDown 1s ease forwards;
+    }
+    .hero h2 {
+        font-size: 1.7em;
+        margin-top: 20px;
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+        animation: fadeInUp 1s ease forwards;
+    }
+    .highlight { color: #ff5733; font-weight: bold; }
+    .red-heading { color: red; font-size: 2.2em; margin: 20px 0 0 0; animation: fadeIn 1s ease forwards; }
+
+    /* Sections */
+    .section {
+        padding: 80px 20px;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+    .section.show { opacity: 1; transform: translateY(0); }
+
+    .paragraph { max-width: 800px; margin: 0 auto 20px auto; font-size: 1.15em; color: #555; }
+    .about-image { width: 300px; margin-top: 20px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+    /* Services */
+    .services { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px; }
+    .service-card {
+        flex: 1 1 280px;
+        border: 1px solid #eee;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: #fff;
+    }
+    .service-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+    /* Testimonials */
+    .testimonials { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px; }
+    .testimonial-card {
+        flex: 1 1 280px;
+        border: 1px solid #eee;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: #fff;
+    }
+    .testimonial-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+    /* Contact */
+    .contact-form { max-width: 500px; margin: 40px auto 0 auto; text-align: left; }
+    .contact-form input, .contact-form textarea, .contact-form button {
+        width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;
+        font-size: 1em;
+    }
+    .contact-form button { background-color: #25D366; color: white; font-size: 1.1em; border: none; cursor: pointer; transition: background 0.3s; }
+    .contact-form button:hover { background-color: #1ebe57; }
+
+    .hours { margin-bottom: 20px; color: #555; }
+    .hours p { margin: 5px 0; }
+
+    /* Animations */
+    @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+    /* Responsive */
+    @media(max-width:768px){
+        .hero h1 { font-size: 2.5em; }
+        .hero h2 { font-size: 1.3em; }
+        .services, .testimonials { flex-direction: column; }
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="menu" id="menu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <h1>Empowering Every Child</h1>
+    <h2>Discover a personalized approach with <span class="highlight">Free Demo Session</span> available</h2>
+    <h2 class="red-heading">Empowering Unique Journeys</h2>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+    <h2>Personalized Care for Every Child</h2>
+    <p class="paragraph">
+        We believe every child is unique and deserves care tailored to their needs. Our programs are designed to support growth, learning, and confidence through specialized approaches.
+    </p>
+    <img src="https://i.ibb.co/2ndh0hD/child.jpg" alt="Child" class="about-image">
+</section>
+
+<!-- Services Section -->
+<section class="section" id="services">
+    <h2 class="red-heading">Tailored Therapy Solutions</h2>
+    <h3>Empowering Children with Autism</h3>
+    <div class="services">
+        <div class="service-card">
+            <h4>Speech Therapy</h4>
+            <p>Our speech therapy sessions help children improve communication skills through fun and engaging activities.</p>
+        </div>
+        <div class="service-card">
+            <h4>Occupational Therapy</h4>
+            <p>Occupational therapy helps children develop daily life skills, fine motor coordination, and independence.</p>
+        </div>
+        <div class="service-card">
+            <h4>ABA Therapy</h4>
+            <p>Applied Behavior Analysis (ABA) therapy provides structured interventions to encourage positive behaviors and learning.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section" id="testimonials">
+    <h2 class="red-heading">What Parents Say</h2>
+    <h3>Real Stories of Growth and Support</h3>
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <h4>Rohit Sharma</h4>
+            <p>The personalized approach made a huge difference in my child’s development. Truly grateful!</p>
+        </div>
+        <div class="testimonial-card">
+            <h4>Anjali Verma</h4>
+            <p>Professional, caring, and effective therapies. My child is thriving thanks to their guidance.</p>
+        </div>
+        <div class="testimonial-card">
+            <h4>Vikram Singh</h4>
+            <p>From day one, we noticed improvement and confidence in our child. Highly recommend!</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+    <h2>We’re Here to Support You</h2>
+    <p>Mobile: +91 98765 43210</p>
+
+    <div class="hours">
+        <p>Monday: 9:00 - 8:30</p>
+        <p>Tuesday: 9:00 - 8:30</p>
+        <p>Wednesday: 9:00 - 8:30</p>
+        <p>Thursday: 9:00 - 8:30</p>
+        <p>Friday: 9:00 - 8:30</p>
+        <p>Saturday: 9:00 - 8:30</p>
+        <p>Sunday: Closed</p>
+    </div>
+
+    <div class="contact-form">
+        <h3>Contact via WhatsApp</h3>
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Your Mobile Number">
+        <textarea placeholder="Your Message"></textarea>
+        <button>Submit</button>
+    </div>
+</section>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+
+// Scroll fade-in for sections
+const sections = document.querySelectorAll('.section');
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if(top < windowHeight - 100) sec.classList.add('show');
+    });
+});
+</script>
+
+</body>
+</html>
