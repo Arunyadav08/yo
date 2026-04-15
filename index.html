@@ -1,26 +1,1419 @@
-<!-- Premium Contact Section -->
-<section class="contact-section" id="contact" style="background:#f8f9fa; padding:80px 20px;">
-  <div style="max-width:800px; margin:0 auto; text-align:center; border-radius:15px; padding:40px; background:white; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
-    <h2 style="font-size:2.5em; margin-bottom:20px; color:#333;">We're Here to Support You</h2>
-    <p style="font-size:1.2em; color:#555; margin-bottom:30px;">Mobile: +91 8053309511</p>
-    
-    <!-- Hours -->
-    <div class="hours" style="margin-bottom:30px; color:#555; font-size:1em; line-height:1.6;">
-      <p>📅 Monday: 9:00am – 8:30pm</p>
-      <p>📅 Tuesday: 9:00am – 8:30pm</p>
-      <p>📅 Wednesday: 9:00am – 8:30pm</p>
-      <p>📅 Thursday: 9:00am – 8:30pm</p>
-      <p>📅 Friday: 9:00am – 8:30pm</p>
-      <p>📅 Saturday: 9:00am – 8:30pm</p>
-      <p>📅 Sunday: Closed</p>
-    </div>
 
-    <!-- Contact Form -->
-    <div class="contact-form" style="text-align:left;">
-      <input type="text" placeholder="Your Name" style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; font-size:1em;">
-      <input type="text" placeholder="Your Mobile Number" style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; font-size:1em;">
-      <textarea placeholder="Your Message" style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; font-size:1em; min-height:120px;"></textarea>
-      <button style="width:100%; padding:15px; background-color:#25D366; color:white; border:none; border-radius:10px; font-size:1.1em; cursor:pointer; transition:0.3s;">Submit</button>
+
+Skip to content
+Using Gmail with screen readers
+Enable desktop notifications for Gmail.
+   OK  No thanks
+Conversations
+Get started with Gmail
+Customize your inbox
+Change profile image
+Import contacts and mail
+Get Gmail for mobile
+Get professional email like "@your-company.com"
+Plus 30GB of storage per user, longer video calls, and more with Google Workspace
+0% of 15 GB used
+Terms · Privacy · Program Policies
+Last account activity: 2 days ago
+Details
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Elara Threads – Fashion for Every Story</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --cream: #F8F4EF;
+    --sand: #E8DDD0;
+    --warm-brown: #6B4C3B;
+    --dark-brown: #2C1A12;
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --white: #FFFFFF;
+    --text: #3A2518;
+    --text-muted: #7A6558;
+    --border: #D4C4B8;
+    --section-bg: #FBF8F5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); }
+
+  /* ─── TOPBAR ─── */
+  .topbar {
+    background: var(--dark-brown);
+    color: var(--gold-light);
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+    box-shadow: 0 2px 20px rgba(44,26,18,0.08);
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--dark-brown);
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  .logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-right { display: flex; align-items: center; gap: 20px; }
+  .btn-signin {
+    background: transparent;
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .btn-signin:hover { background: var(--gold); color: var(--white); }
+  .cart-btn {
+    background: var(--dark-brown);
+    color: var(--gold-light);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  .cart-btn:hover { background: var(--warm-brown); }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--warm-brown) 50%, #8B5E3C 100%);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 700px; padding: 40px; }
+  .hero-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--dark-brown);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    margin-bottom: 28px;
+    border-radius: 1px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    color: var(--cream);
+    line-height: 1.05;
+    font-weight: 300;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero p {
+    color: rgba(248,244,239,0.75);
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--dark-brown);
+    border: none;
+    padding: 16px 40px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--cream);
+    border: 1.5px solid rgba(248,244,239,0.5);
+    padding: 16px 40px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--cream); background: rgba(255,255,255,0.08); }
+
+  /* ─── TRUST BAR ─── */
+  .trust-bar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 24px 40px;
+    flex-wrap: wrap;
+  }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text-muted); font-weight: 500; }
+  .trust-item strong { color: var(--dark-brown); }
+
+  /* ─── SECTIONS ─── */
+  section { padding: 90px 40px; }
+  .section-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--dark-brown);
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+  .section-sub {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 520px;
+    font-weight: 300;
+  }
+  .section-header { text-align: center; margin-bottom: 56px; }
+  .section-header .section-sub { margin: 0 auto; }
+
+  /* ─── CATEGORIES ─── */
+  #shop { background: var(--section-bg); }
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .cat-card {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    padding: 28px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .cat-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(201,168,76,0.15); }
+  .cat-card.active { border-color: var(--gold); background: var(--gold); }
+  .cat-card.active .cat-icon, .cat-card.active .cat-name, .cat-card.active .cat-count { color: var(--dark-brown); }
+  .cat-icon { font-size: 36px; margin-bottom: 10px; display: block; }
+  .cat-name { font-weight: 600; font-size: 14px; color: var(--dark-brown); letter-spacing: 0.5px; }
+  .cat-count { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+  /* ─── PRODUCTS ─── */
+  .prod-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .prod-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .prod-card:hover { box-shadow: 0 12px 40px rgba(44,26,18,0.12); transform: translateY(-4px); }
+  .prod-img {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .prod-img-bg1 { background: linear-gradient(135deg, #f5ede3, #e8d4c0); }
+  .prod-img-bg2 { background: linear-gradient(135deg, #e8e0f0, #d4c8e8); }
+  .prod-img-bg3 { background: linear-gradient(135deg, #e0ede8, #c8dcd4); }
+  .prod-img-bg4 { background: linear-gradient(135deg, #f0e8e0, #ddd0c0); }
+  .prod-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--gold);
+    color: var(--dark-brown);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 1px;
+  }
+  .prod-info { padding: 20px; }
+  .prod-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; color: var(--dark-brown); }
+  .prod-cat { font-size: 12px; color: var(--text-muted); letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 12px; }
+  .prod-footer { display: flex; align-items: center; justify-content: space-between; }
+  .prod-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--dark-brown); }
+  .prod-price-old { font-size: 13px; color: var(--text-muted); text-decoration: line-through; margin-left: 6px; }
+  .btn-add {
+    background: var(--dark-brown);
+    color: var(--white);
+    border: none;
+    padding: 9px 18px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s;
+  }
+  .btn-add:hover { background: var(--gold); color: var(--dark-brown); }
+
+  /* ─── REVIEWS ─── */
+  #reviews { background: var(--dark-brown); }
+  #reviews .section-title { color: var(--cream); }
+  #reviews .section-tag { color: var(--gold); }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .review-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 4px;
+    padding: 32px;
+  }
+  .stars { color: var(--gold); font-size: 18px; margin-bottom: 16px; }
+  .review-text { color: rgba(248,244,239,0.8); font-size: 15px; line-height: 1.7; font-style: italic; margin-bottom: 20px; font-weight: 300; }
+  .reviewer { display: flex; align-items: center; gap: 14px; }
+  .reviewer-avatar { width: 46px; height: 46px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-size: 20px; }
+  .reviewer-name { font-weight: 600; color: var(--cream); font-size: 15px; }
+  .reviewer-loc { color: var(--text-muted); font-size: 13px; }
+
+  /* ─── ABOUT ─── */
+  #about { background: var(--cream); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1100px; margin: 0 auto; }
+  .about-visual {
+    background: linear-gradient(135deg, var(--dark-brown), var(--warm-brown));
+    border-radius: 4px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-visual::after {
+    content: '"Fashion is the armor to survive the reality of everyday life."';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(201,168,76,0.9);
+    color: var(--dark-brown);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    padding: 20px 24px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+  .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 36px; }
+  .about-feature { display: flex; gap: 14px; }
+  .about-feat-icon { font-size: 26px; flex-shrink: 0; }
+  .about-feat-title { font-weight: 600; font-size: 15px; color: var(--dark-brown); margin-bottom: 4px; }
+  .about-feat-text { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+  /* ─── WHY US ─── */
+  #why { background: var(--section-bg); }
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; max-width: 1100px; margin: 0 auto; }
+  .why-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 36px 28px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .why-card:hover { border-color: var(--gold); box-shadow: 0 8px 30px rgba(201,168,76,0.12); }
+  .why-icon { font-size: 40px; margin-bottom: 18px; display: block; }
+  .why-title { font-weight: 700; font-size: 16px; color: var(--dark-brown); margin-bottom: 10px; }
+  .why-text { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+  /* ─── STATS ─── */
+  .stats-bar {
+    background: var(--gold);
+    padding: 48px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  .stat-item { text-align: center; }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 600; color: var(--dark-brown); line-height: 1; }
+  .stat-label { font-size: 13px; color: var(--dark-brown); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 6px; opacity: 0.7; }
+
+  /* ─── STORES ─── */
+  #location { background: var(--cream); }
+  .stores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto 40px; }
+  .store-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 32px;
+    transition: all 0.25s;
+  }
+  .store-card:hover { border-color: var(--gold); }
+  .store-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--dark-brown); margin-bottom: 16px; font-weight: 600; }
+  .store-detail { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; display: flex; gap: 8px; line-height: 1.5; }
+  .store-detail-icon { flex-shrink: 0; }
+  .btn-dir {
+    margin-top: 20px;
+    display: inline-block;
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    padding: 9px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.2s;
+  }
+  .btn-dir:hover { background: var(--gold); color: var(--dark-brown); }
+  .map-box {
+    background: var(--sand);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .map-box p { color: var(--text-muted); font-size: 15px; }
+  .delivery-info {
+    display: flex;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 32px auto 0;
+    flex-wrap: wrap;
+  }
+  .delivery-chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .dot-green { background: #2ecc71; }
+  .dot-yellow { background: #f1c40f; }
+  .dot-blue { background: #3498db; }
+
+  /* ─── HELP ─── */
+  #help { background: var(--section-bg); }
+  .help-channels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 60px;
+  }
+  .help-channel {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .help-channel:hover { border-color: var(--gold); }
+  .help-ch-icon { font-size: 32px; margin-bottom: 12px; }
+  .help-ch-title { font-weight: 700; color: var(--dark-brown); margin-bottom: 6px; }
+  .help-ch-text { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+  .faq-wrap { max-width: 760px; margin: 0 auto; }
+  .faq-title { font-family: 'Cormorant Garamond', serif; font-size: 30px; color: var(--dark-brown); margin-bottom: 24px; text-align: center; }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark-brown);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .faq-q:hover { color: var(--gold); }
+  .faq-a { padding: 0 0 20px; font-size: 14px; color: var(--text-muted); line-height: 1.7; display: none; }
+  .faq-a.open { display: block; }
+  .contact-section {
+    max-width: 760px;
+    margin: 60px auto 0;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px;
+  }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+  .form-group input, .form-group select, .form-group textarea {
+    border: 1.5px solid var(--border);
+    border-radius: 3px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    outline: none;
+    transition: border 0.2s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+  .form-group.full { grid-column: 1/-1; }
+  .form-group textarea { height: 100px; resize: vertical; }
+  .btn-send {
+    background: var(--dark-brown);
+    color: var(--cream);
+    border: none;
+    padding: 14px 36px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 10px;
+    transition: background 0.2s;
+  }
+  .btn-send:hover { background: var(--gold); color: var(--dark-brown); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--dark-brown);
+    color: var(--cream);
+    padding: 60px 40px 30px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto 48px;
+  }
+  .footer-brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--gold-light);
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+  .footer-brand-desc { font-size: 14px; color: rgba(248,244,239,0.6); line-height: 1.7; margin-bottom: 20px; }
+  .footer-socials { display: flex; gap: 12px; }
+  .social-btn {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .social-btn:hover { background: var(--gold); border-color: var(--gold); }
+  .footer-col-title { font-weight: 700; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { color: rgba(248,244,239,0.6); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold-light); }
+  .footer-contact-item { font-size: 14px; color: rgba(248,244,239,0.6); margin-bottom: 10px; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 28px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .footer-badges { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 16px; }
+  .footer-badge {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgba(248,244,239,0.7);
+  }
+  .footer-copy { font-size: 13px; color: rgba(248,244,239,0.4); }
+  .footer-copy a { color: var(--gold); text-decoration: none; }
+
+  /* ─── CART MODAL ─── */
+  .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2000; }
+  .overlay.active { display: block; }
+  .cart-panel {
+    position: fixed;
+    right: -420px;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    background: var(--white);
+    z-index: 2001;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -8px 0 40px rgba(0,0,0,0.15);
+  }
+  .cart-panel.open { right: 0; }
+  .cart-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--dark-brown); }
+  .close-btn { background: none; border: none; font-size: 24px; cursor: pointer; color: var(--text-muted); }
+  .cart-body { flex: 1; overflow-y: auto; padding: 24px 28px; }
+  .cart-empty { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+  .cart-empty span { font-size: 60px; display: block; margin-bottom: 16px; }
+  .cart-item { display: flex; gap: 16px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+  .cart-item-img { width: 70px; height: 70px; border-radius: 3px; background: var(--sand); display: flex; align-items: center; justify-content: center; font-size: 32px; flex-shrink: 0; }
+  .cart-item-info { flex: 1; }
+  .cart-item-name { font-weight: 600; font-size: 15px; color: var(--dark-brown); margin-bottom: 4px; }
+  .cart-item-price { color: var(--gold); font-weight: 600; }
+  .cart-item-remove { background: none; border: none; font-size: 18px; cursor: pointer; color: var(--text-muted); }
+  .cart-footer { padding: 24px 28px; border-top: 1px solid var(--border); }
+  .cart-total { display: flex; justify-content: space-between; font-size: 18px; font-weight: 700; color: var(--dark-brown); margin-bottom: 20px; }
+  .btn-checkout {
+    width: 100%;
+    background: var(--gold);
+    color: var(--dark-brown);
+    border: none;
+    padding: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .btn-checkout:hover { background: var(--dark-brown); color: var(--cream); }
+
+  /* ─── SIGNIN MODAL ─── */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 3000;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal.active { display: flex; }
+  .modal-box {
+    background: var(--white);
+    border-radius: 4px;
+    padding: 48px 44px;
+    max-width: 420px;
+    width: 100%;
+    margin: 20px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+  .modal-logo { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: var(--dark-brown); text-align: center; margin-bottom: 6px; }
+  .modal-logo span { color: var(--gold); }
+  .modal-sub { text-align: center; color: var(--text-muted); font-size: 14px; margin-bottom: 32px; }
+  .modal-tabs { display: flex; margin-bottom: 28px; border-bottom: 1px solid var(--border); }
+  .modal-tab { flex: 1; padding: 12px; background: none; border: none; font-size: 14px; font-weight: 600; cursor: pointer; color: var(--text-muted); border-bottom: 2.5px solid transparent; margin-bottom: -1px; }
+  .modal-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+  .modal-form { display: flex; flex-direction: column; gap: 16px; }
+  .modal-close { position: absolute; top: 16px; right: 20px; background: none; border: none; font-size: 22px; cursor: pointer; color: var(--text-muted); }
+
+  /* ─── MENU SECTION ─── */
+  #menu { background: var(--cream); }
+  .menu-categories { max-width: 1100px; margin: 0 auto; }
+  .menu-cat { margin-bottom: 48px; }
+  .menu-cat-title { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--dark-brown); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+  .menu-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+  .menu-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .menu-item:hover { border-color: var(--gold); }
+  .menu-item-icon { font-size: 36px; flex-shrink: 0; }
+  .menu-item-name { font-weight: 600; font-size: 15px; color: var(--dark-brown); }
+  .menu-item-price { font-size: 14px; color: var(--gold); font-weight: 600; margin-top: 2px; }
+
+  /* ─── FEATURED BANNER ─── */
+  .featured-banner {
+    background: linear-gradient(135deg, var(--warm-brown), var(--dark-brown));
+    border-radius: 4px;
+    padding: 48px;
+    max-width: 1100px;
+    margin: 0 auto 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .feat-banner-text h3 { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--cream); margin-bottom: 10px; }
+  .feat-banner-text p { color: rgba(248,244,239,0.7); font-size: 15px; }
+  .feat-banner-tag { background: var(--gold); color: var(--dark-brown); font-size: 11px; letter-spacing: 2px; font-weight: 700; padding: 4px 12px; border-radius: 1px; display: inline-block; margin-bottom: 12px; text-transform: uppercase; }
+
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 44px; }
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .trust-bar { gap: 24px; }
+    section { padding: 60px 20px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-visual { height: 280px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .stats-bar { gap: 40px; }
+    .featured-banner { padding: 32px; }
+    .cart-panel { width: 100%; right: -100%; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">✦ FREE SHIPPING ON ORDERS ABOVE ₹1499 &nbsp;|&nbsp; NEW ARRIVALS: SUMMER COLLECTION 2026 ✦</div>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="logo" href="#">Elara <span>Threads</span></a>
+  <ul class="nav-links">
+    <li><a onclick="scrollTo('home')">Home</a></li>
+    <li><a onclick="scrollTo('shop')">Shop</a></li>
+    <li><a onclick="scrollTo('menu')">Collections</a></li>
+    <li><a onclick="scrollTo('about')">About</a></li>
+    <li><a onclick="scrollTo('location')">Stores</a></li>
+    <li><a onclick="scrollTo('help')">Help</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="btn-signin" onclick="openModal()">Sign In</button>
+    <button class="cart-btn" onclick="openCart()">🛍 <span id="cart-count">0</span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" style="padding:0;">
+  <div class="hero">
+    <div class="hero-content">
+      <span class="hero-tag">New Collection 2026</span>
+      <h1>Fashion for <em>Every</em> Story</h1>
+      <p>Handcrafted garments, timeless silhouettes and contemporary style — curated for the modern Indian wardrobe.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" onclick="scrollTo('shop')">Shop Now →</a>
+        <a class="btn-outline" onclick="scrollTo('about')">Our Story</a>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">🚚 <strong>Free Delivery</strong>&nbsp;above ₹1499</div>
+  <div class="trust-item">🔄 <strong>Easy Returns</strong>&nbsp;within 10 days</div>
+  <div class="trust-item">🧵 <strong>Handcrafted</strong>&nbsp;Quality</div>
+  <div class="trust-item">🔒 <strong>Secure Payments</strong>&nbsp;UPI & Cards</div>
+</div>
+
+<!-- SHOP BY CATEGORY -->
+<section id="shop">
+  <div class="section-header">
+    <div class="section-tag">Browse</div>
+    <h2 class="section-title">Shop by Category</h2>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card active" onclick="filterProducts('all', this)">
+      <span class="cat-icon">👗</span>
+      <div class="cat-name">All Products</div>
+      <div class="cat-count">24 items</div>
+    </div>
+    <div class="cat-card" onclick="filterProducts('kurta', this)">
+      <span class="cat-icon">👘</span>
+      <div class="cat-name">Kurtas</div>
+      <div class="cat-count">8 items</div>
+    </div>
+    <div class="cat-card" onclick="filterProducts('saree', this)">
+      <span class="cat-icon">🥻</span>
+      <div class="cat-name">Sarees</div>
+      <div class="cat-count">5 items</div>
+    </div>
+    <div class="cat-card" onclick="filterProducts('western', this)">
+      <span class="cat-icon">👔</span>
+      <div class="cat-name">Western</div>
+      <div class="cat-count">4 items</div>
+    </div>
+    <div class="cat-card" onclick="filterProducts('lehenga', this)">
+      <span class="cat-icon">💃</span>
+      <div class="cat-name">Lehengas</div>
+      <div class="cat-count">4 items</div>
+    </div>
+    <div class="cat-card" onclick="filterProducts('accessories', this)">
+      <span class="cat-icon">💍</span>
+      <div class="cat-name">Accessories</div>
+      <div class="cat-count">3 items</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section style="background: var(--white); padding: 0 40px 80px;">
+  <div style="max-width:1200px; margin:0 auto;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:40px; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div class="section-tag">Curated Picks</div>
+        <h2 class="section-title" style="margin-bottom:0;">Featured Products</h2>
+      </div>
+      <a class="btn-primary" href="#">View All</a>
+    </div>
+    <div class="prod-grid" id="products-grid">
+      <!-- Products injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-header">
+    <div class="section-tag">Testimonials</div>
+    <h2 class="section-title">Happy Customers ❤️</h2>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"The chanderi kurta I ordered is absolutely stunning — the fabric quality is exceptional. Delivered to Jaipur in 2 days!"</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">👩</div>
+        <div>
+          <div class="reviewer-name">Meera Sharma</div>
+          <div class="reviewer-loc">Jaipur, RJ</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"I wore the Elara lehenga at my cousin's wedding and received compliments all evening. Fit was perfect and stitching immaculate."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">👧</div>
+        <div>
+          <div class="reviewer-name">Priya Nair</div>
+          <div class="reviewer-loc">Kochi, KL</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★☆</div>
+      <p class="review-text">"Great selection of banarasi sarees. The packaging was gorgeous and it arrived before the estimated date. Will order again!"</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">🧕</div>
+        <div>
+          <div class="reviewer-name">Sunita Gupta</div>
+          <div class="reviewer-loc">Varanasi, UP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS MENU -->
+<section id="menu">
+  <div class="section-header">
+    <div class="section-tag">Browse Full Catalogue</div>
+    <h2 class="section-title">Our Collections</h2>
+    <p class="section-sub">Discover our complete range of handcrafted garments, curated for every occasion.</p>
+  </div>
+  <div class="menu-categories">
+    <div class="featured-banner">
+      <div>
+        <span class="feat-banner-tag">Limited Time</span>
+        <div class="feat-banner-text">
+          <h3>Subscribe & Save 15%</h3>
+          <p>Set up seasonal delivery and never miss a new collection drop.</p>
+        </div>
+      </div>
+      <button class="btn-primary">Subscribe Now</button>
+    </div>
+    <div class="menu-cat">
+      <div class="menu-cat-title">👘 Kurta Collection</div>
+      <div class="menu-items">
+        <div class="menu-item" onclick="addToCart('Chikankari Kurta', 2499)">
+          <span class="menu-item-icon">👘</span>
+          <div><div class="menu-item-name">Chikankari Kurta</div><div class="menu-item-price">₹2,499</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Chanderi Straight Kurta', 1899)">
+          <span class="menu-item-icon">👘</span>
+          <div><div class="menu-item-name">Chanderi Straight Kurta</div><div class="menu-item-price">₹1,899</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Block Print Kurta Set', 3299)">
+          <span class="menu-item-icon">👘</span>
+          <div><div class="menu-item-name">Block Print Kurta Set</div><div class="menu-item-price">₹3,299</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Anarkali Suit', 4499)">
+          <span class="menu-item-icon">👘</span>
+          <div><div class="menu-item-name">Anarkali Suit</div><div class="menu-item-price">₹4,499</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-cat">
+      <div class="menu-cat-title">🥻 Saree Collection</div>
+      <div class="menu-items">
+        <div class="menu-item" onclick="addToCart('Banarasi Silk Saree', 8999)">
+          <span class="menu-item-icon">🥻</span>
+          <div><div class="menu-item-name">Banarasi Silk Saree</div><div class="menu-item-price">₹8,999</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Kanjivaram Saree', 12499)">
+          <span class="menu-item-icon">🥻</span>
+          <div><div class="menu-item-name">Kanjivaram Saree</div><div class="menu-item-price">₹12,499</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Georgette Saree', 2999)">
+          <span class="menu-item-icon">🥻</span>
+          <div><div class="menu-item-name">Georgette Saree</div><div class="menu-item-price">₹2,999</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-cat">
+      <div class="menu-cat-title">💃 Lehenga & Occasion Wear</div>
+      <div class="menu-items">
+        <div class="menu-item" onclick="addToCart('Bridal Lehenga', 24999)">
+          <span class="menu-item-icon">💃</span>
+          <div><div class="menu-item-name">Bridal Lehenga</div><div class="menu-item-price">₹24,999</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Festive Lehenga Choli', 7499)">
+          <span class="menu-item-icon">💃</span>
+          <div><div class="menu-item-name">Festive Lehenga Choli</div><div class="menu-item-price">₹7,499</div></div>
+        </div>
+        <div class="menu-item" onclick="addToCart('Sharara Set', 5999)">
+          <span class="menu-item-icon">💃</span>
+          <div><div class="menu-item-name">Sharara Set</div><div class="menu-item-price">₹5,999</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-cat">
+      <div class="menu-cat-title">💍 Accessories — Coming Soon</div>
+      <div class="menu-items">
+        <div class="menu-item" style="opacity:0.6;">
+          <span class="menu-item-icon">💍</span>
+          <div><div class="menu-item-name">Oxidised Jewellery</div><div class="menu-item-price">Launching Soon</div></div>
+        </div>
+        <div class="menu-item" style="opacity:0.6;">
+          <span class="menu-item-icon">👜</span>
+          <div><div class="menu-item-name">Potli Bags</div><div class="menu-item-price">Launching Soon</div></div>
+        </div>
+        <div class="menu-item" style="opacity:0.6;">
+          <span class="menu-item-icon">🧣</span>
+          <div><div class="menu-item-name">Dupattas & Stoles</div><div class="menu-item-price">Launching Soon</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual">🧵</div>
+    <div>
+      <div class="section-tag">Our Story</div>
+      <h2 class="section-title">Born from a Passion for Indian Craft</h2>
+      <p class="section-sub">Elara Threads was founded in 2018 in Jaipur by a team of textile artisans and fashion enthusiasts who believed Indian craftsmanship deserved a global stage. We work directly with weavers, block printers, and embroiderers across Rajasthan, Uttar Pradesh, and Tamil Nadu.</p>
+      <p class="section-sub" style="margin-top:16px;">Today we serve thousands of customers across 400+ cities in India — delivering authentically crafted, beautifully finished garments at honest prices.</p>
+      <div class="about-features">
+        <div class="about-feature">
+          <span class="about-feat-icon">🌿</span>
+          <div><div class="about-feat-title">Natural Fabrics</div><div class="about-feat-text">Pure cottons, silks, and linens. No synthetics, no shortcuts.</div></div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feat-icon">🧶</span>
+          <div><div class="about-feat-title">Artisan Made</div><div class="about-feat-text">Every piece supports skilled craftspeople and preserves heritage techniques.</div></div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feat-icon">🇮🇳</span>
+          <div><div class="about-feat-title">Made in India</div><div class="about-feat-text">Proudly manufactured and shipped from Indian workshops.</div></div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feat-icon">♻️</span>
+          <div><div class="about-feat-title">Eco-Friendly</div><div class="about-feat-text">Sustainable packaging, natural dyes, and responsible sourcing.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-header">
+    <div class="section-tag">Why Elara Threads?</div>
+    <h2 class="section-title">Our Promise to You</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">🚚</span>
+      <div class="why-title">Pan-India Delivery</div>
+      <div class="why-text">Fast, reliable shipping to 400+ cities. Free delivery above ₹1499.</div>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">✂️</span>
+      <div class="why-title">Master Tailoring</div>
+      <div class="why-text">Precision stitching and quality-checked finishing on every garment.</div>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">💰</span>
+      <div class="why-title">Fair Prices</div>
+      <div class="why-text">Premium craftsmanship at honest prices. No hidden charges, ever.</div>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">📞</span>
+      <div class="why-title">Dedicated Support</div>
+      <div class="why-text">Our styling team is available 7 days a week to assist you.</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-num">30K+</div><div class="stat-label">Happy Customers</div></div>
+  <div class="stat-item"><div class="stat-num">400+</div><div class="stat-label">Cities Served</div></div>
+  <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Garments Listed</div></div>
+  <div class="stat-item"><div class="stat-num">4.9★</div><div class="stat-label">Average Rating</div></div>
+</div>
+
+<!-- STORES / LOCATION -->
+<section id="location">
+  <div class="section-header">
+    <div class="section-tag">Visit Us</div>
+    <h2 class="section-title">Our Stores & Delivery</h2>
+    <p class="section-sub">Visit us in-store or enjoy home delivery across India.</p>
+  </div>
+  <div class="stores-grid">
+    <div class="store-card">
+      <div class="store-name">🏪 Elara Jaipur (HQ)</div>
+      <div class="store-detail"><span class="store-detail-icon">📍</span><span>12, MI Road, Near Ajmeri Gate,<br>Jaipur, Rajasthan – 302 001</span></div>
+      <div class="store-detail"><span class="store-detail-icon">⏰</span><span>Mon–Sat: 10:00 AM – 8:00 PM | Sun: 11:00 AM – 6:00 PM</span></div>
+      <div class="store-detail"><span class="store-detail-icon">📞</span><span>+91 98765 11001</span></div>
+      <div class="store-detail"><span class="store-detail-icon">📧</span><span>jaipur@elarathreads.in</span></div>
+      <button class="btn-dir">📍 Get Directions</button>
+    </div>
+    <div class="store-card">
+      <div class="store-name">🏪 Elara Mumbai</div>
+      <div class="store-detail"><span class="store-detail-icon">📍</span><span>Shop 4, Palladium Mall, Lower Parel,<br>Mumbai – 400 013</span></div>
+      <div class="store-detail"><span class="store-detail-icon">⏰</span><span>Mon–Sat: 11:00 AM – 9:00 PM | Sun: 11:00 AM – 7:00 PM</span></div>
+      <div class="store-detail"><span class="store-detail-icon">📞</span><span>+91 98765 22002</span></div>
+      <button class="btn-dir">📍 Get Directions</button>
+    </div>
+    <div class="store-card">
+      <div class="store-name">🏪 Elara Delhi</div>
+      <div class="store-detail"><span class="store-detail-icon">📍</span><span>G-28, DLF Promenade, Vasant Kunj,<br>New Delhi – 110 070</span></div>
+      <div class="store-detail"><span class="store-detail-icon">⏰</span><span>Mon–Sat: 10:00 AM – 9:00 PM | Sun: 12:00 PM – 7:00 PM</span></div>
+      <div class="store-detail"><span class="store-detail-icon">📞</span><span>+91 98765 33003</span></div>
+      <button class="btn-dir">📍 Get Directions</button>
+    </div>
+  </div>
+  <div class="map-box">
+    <span style="font-size:48px;">🗺️</span>
+    <p>Interactive map available in production with Google Maps API</p>
+    <button class="btn-primary">View on Google Maps</button>
+  </div>
+  <div class="delivery-info">
+    <div class="delivery-chip"><span class="dot dot-green"></span>Metro Cities &nbsp;<strong>1–2 Days</strong></div>
+    <div class="delivery-chip"><span class="dot dot-yellow"></span>Tier 2 Cities &nbsp;<strong>3–4 Days</strong></div>
+    <div class="delivery-chip"><span class="dot dot-blue"></span>Remote Areas &nbsp;<strong>5–7 Days</strong></div>
+    <div class="delivery-chip">📦 Free shipping above <strong>₹1499</strong> · Express ₹99 extra</div>
+  </div>
+</section>
+
+<!-- HELP -->
+<section id="help">
+  <div class="section-header">
+    <div class="section-tag">Support</div>
+    <h2 class="section-title">Help Centre</h2>
+    <p class="section-sub">We're here for you 7 days a week.</p>
+  </div>
+  <div class="help-channels">
+    <div class="help-channel">
+      <div class="help-ch-icon">💬</div>
+      <div class="help-ch-title">Live Chat</div>
+      <div class="help-ch-text">Chat with our styling experts instantly, any time.</div>
+    </div>
+    <div class="help-channel">
+      <div class="help-ch-icon">📞</div>
+      <div class="help-ch-title">Call Us</div>
+      <div class="help-ch-text">1800-ELARA-01 (Toll Free)<br>Mon–Sat, 9 AM – 9 PM</div>
+    </div>
+    <div class="help-channel">
+      <div class="help-ch-icon">📍</div>
+      <div class="help-ch-title">Visit a Store</div>
+      <div class="help-ch-text">Find your nearest Elara Threads showroom.</div>
+    </div>
+    <div class="help-channel">
+      <div class="help-ch-icon">📧</div>
+      <div class="help-ch-title">Email Us</div>
+      <div class="help-ch-text">support@elarathreads.in<br>Reply within 24 hours</div>
+    </div>
+  </div>
+  <div class="faq-wrap">
+    <div class="faq-title">Frequently Asked Questions</div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How do I track my order? <span>＋</span></button>
+      <div class="faq-a">Once your order is shipped, you'll receive an SMS and email with a tracking link. You can also log into your account and visit "My Orders" to track in real time. We partner with Delhivery, BlueDart, and Ekart.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What is your return & refund policy? <span>＋</span></button>
+      <div class="faq-a">We offer 10-day easy returns on all products. If you're not satisfied, contact us within 10 days of delivery. Refunds are processed within 5–7 business days. Note: customised/stitched items cannot be returned unless defective.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept? <span>＋</span></button>
+      <div class="faq-a">We accept UPI (GPay, PhonePe, Paytm), Credit/Debit Cards, Net Banking, EMI on orders above ₹3,000, and Cash on Delivery in select pin codes.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do you offer custom stitching / tailoring? <span>＋</span></button>
+      <div class="faq-a">Yes! Many of our products can be custom stitched to your measurements. Simply add your measurements at checkout or contact our team. Custom orders take 5–7 extra working days.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How can I cancel my order? <span>＋</span></button>
+      <div class="faq-a">Orders can be cancelled within 2 hours of placing them. Go to "My Orders" in your account or contact our support team. Once the order is shipped, cancellation is not possible, but you can initiate a return after delivery.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do you deliver across all of India? <span>＋</span></button>
+      <div class="faq-a">Yes! We deliver to 400+ cities across India. Metro cities get delivery in 1–2 days, Tier 2 cities in 3–4 days, and remote areas in 5–7 days. Enter your PIN code at checkout to see timelines.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is Cash on Delivery available? <span>＋</span></button>
+      <div class="faq-a">Yes, COD is available in most pin codes. A handling fee of ₹40 may apply. Check availability at checkout by entering your pin code.</div>
+    </div>
+  </div>
+  <div class="contact-section">
+    <h3 style="font-family:'Cormorant Garamond',serif; font-size:26px; color:var(--dark-brown); margin-bottom:24px;">Send a Message</h3>
+    <div class="contact-grid">
+      <div class="form-group"><label>First Name</label><input type="text" placeholder="Ananya"/></div>
+      <div class="form-group"><label>Last Name</label><input type="text" placeholder="Sharma"/></div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="form-group"><label>Topic</label>
+        <select>
+          <option>Select a topic</option>
+          <option>Order Tracking</option>
+          <option>Return / Refund</option>
+          <option>Sizing Help</option>
+          <option>Custom Order</option>
+          <option>Payment Issue</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group full"><label>Message</label><textarea placeholder="Tell us how we can help…"></textarea></div>
+    </div>
+    <button class="btn-send">Send Message →</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Elara Threads</div>
+      <div class="footer-brand-desc">India's most loved garment destination. Handcrafted fashion, timeless designs, and authentic Indian textiles — delivered pan-India.</div>
+      <div class="footer-socials">
+        <div class="social-btn">📘</div>
+        <div class="social-btn">📸</div>
+        <div class="social-btn">🐦</div>
+        <div class="social-btn">▶️</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop All Products</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Store Locations</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Customer Support</div>
+      <ul class="footer-links">
+        <li><a href="#">Help Centre</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Track My Order</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">Shipping Info</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact Us</div>
+      <div class="footer-contact-item">📞 1800-ELARA-01 (Toll Free)</div>
+      <div class="footer-contact-item">📧 support@elarathreads.in</div>
+      <div class="footer-contact-item">📍 3 Showrooms Across India</div>
+      <div class="footer-contact-item">💬 WhatsApp Us</div>
+      <div class="footer-contact-item">🕐 Mon–Sat, 9AM–9PM</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-badges">
+      <span class="footer-badge">🔒 SSL Secure</span>
+      <span class="footer-badge">🇮🇳 Made in India</span>
+      <span class="footer-badge">🧵 Artisan Crafted</span>
+    </div>
+    <div class="footer-copy">© 2026 Elara Threads India Pvt. Ltd. · All rights reserved · Made with ❤️ for fashion lovers across India</div>
+  </div>
+</footer>
+
+<!-- CART PANEL -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<div class="cart-panel" id="cart-panel">
+  <div class="cart-header">
+    <h3>Your Cart 🛍</h3>
+    <button class="close-btn" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-body" id="cart-body">
+    <div class="cart-empty"><span>🛍</span><p>Your cart is empty.</p></div>
+  </div>
+  <div class="cart-footer" id="cart-footer" style="display:none;">
+    <div class="cart-total"><span>Total</span><span id="cart-total-amt">₹0</span></div>
+    <button class="btn-checkout">Checkout →</button>
+  </div>
+</div>
+
+<!-- SIGN IN MODAL -->
+<div class="modal" id="signin-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-logo">Elara <span>Threads</span></div>
+    <div class="modal-sub">Sign in or create your account</div>
+    <div class="modal-tabs">
+      <button class="modal-tab active" onclick="switchTab('signin', this)">Sign In</button>
+      <button class="modal-tab" onclick="switchTab('signup', this)">Sign Up</button>
+    </div>
+    <div id="signin-form" class="modal-form">
+      <div class="form-group"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="form-group"><label>Password</label><input type="password" placeholder="••••••••"/></div>
+      <button class="btn-send" style="width:100%;">Sign In →</button>
+    </div>
+    <div id="signup-form" class="modal-form" style="display:none;">
+      <div class="form-group"><label>Full Name</label><input type="text" placeholder="Ananya Sharma"/></div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="form-group"><label>Password</label><input type="password" placeholder="Create password"/></div>
+      <button class="btn-send" style="width:100%;">Create Account →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ─── SCROLL ───
+  function scrollTo(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // ─── PRODUCTS DATA ───
+  const products = [
+    { id: 1, name: 'Chikankari Anarkali', cat: 'kurta', price: 3499, oldPrice: 4499, icon: '👘', bg: 'prod-img-bg1', badge: 'Bestseller' },
+    { id: 2, name: 'Banarasi Silk Saree', cat: 'saree', price: 8999, oldPrice: 11999, icon: '🥻', bg: 'prod-img-bg2', badge: 'New' },
+    { id: 3, name: 'Bridal Lehenga Set', cat: 'lehenga', price: 19999, oldPrice: 26999, icon: '💃', bg: 'prod-img-bg3', badge: 'Sale' },
+    { id: 4, name: 'Cotton Linen Kurta', cat: 'kurta', price: 1899, oldPrice: null, icon: '👘', bg: 'prod-img-bg4', badge: null },
+    { id: 5, name: 'Classic Denim Jacket', cat: 'western', price: 3299, oldPrice: 4200, icon: '🧥', bg: 'prod-img-bg1', badge: 'Trending' },
+    { id: 6, name: 'Kanjivaram Saree', cat: 'saree', price: 12499, oldPrice: null, icon: '🥻', bg: 'prod-img-bg2', badge: 'Premium' },
+    { id: 7, name: 'Festive Sharara Set', cat: 'lehenga', price: 5999, oldPrice: 7499, icon: '💃', bg: 'prod-img-bg3', badge: 'New' },
+    { id: 8, name: 'Oxidised Necklace', cat: 'accessories', price: 899, oldPrice: null, icon: '💍', bg: 'prod-img-bg4', badge: null },
+  ];
+
+  function renderProducts(data) {
+    const grid = document.getElementById('products-grid');
+    grid.innerHTML = data.map(p => `
+      <div class="prod-card">
+        <div class="prod-img ${p.bg}">
+          ${p.badge ? `<span class="prod-badge">${p.badge}</span>` : ''}
+          ${p.icon}
+        </div>
+        <div class="prod-info">
+          <div class="prod-name">${p.name}</div>
+          <div class="prod-cat">${p.cat}</div>
+          <div class="prod-footer">
+            <div>
+              <span class="prod-price">₹${p.price.toLocaleString('en-IN')}</span>
+              ${p.oldPrice ? `<span class="prod-price-old">₹${p.oldPrice.toLocaleString('en-IN')}</span>` : ''}
+            </div>
+            <button class="btn-add" onclick="addToCart('${p.name}', ${p.price})">Add</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  renderProducts(products);
+
+  function filterProducts(cat, el) {
+    document.querySelectorAll('.cat-card').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+    const filtered = cat === 'all' ? products : products.filter(p => p.cat === cat);
+    renderProducts(filtered);
+  }
+
+  // ─── CART ───
+  let cart = [];
+  function addToCart(name, price) {
+    const existing = cart.find(i => i.name === name);
+    if (existing) existing.qty++;
+    else cart.push({ name, price, qty: 1 });
+    updateCart();
+    openCart();
+  }
+  function removeFromCart(name) {
+    cart = cart.filter(i => i.name !== name);
+    updateCart();
+  }
+  function updateCart() {
+    const count = cart.reduce((a, i) => a + i.qty, 0);
+    document.getElementById('cart-count').textContent = count;
+    const body = document.getElementById('cart-body');
+    const footer = document.getElementById('cart-footer');
+    if (cart.length === 0) {
+      body.innerHTML = '<div class="cart-empty"><span>🛍</span><p>Your cart is empty.</p></div>';
+      footer.style.display = 'none';
+    } else {
+      body.innerHTML = cart.map(i => `
+        <div class="cart-item">
+          <div class="cart-item-img">👘</div>
+          <div class="cart-item-info">
+            <div class="cart-item-name">${i.name} ×${i.qty}</div>
+            <div class="cart-item-price">₹${(i.price * i.qty).toLocaleString('en-IN')}</div>
+          </div>
+          <button class="cart-item-remove" onclick="removeFromCart('${i.name}')">✕</button>
+        </div>
+      `).join('');
+      const total = cart.reduce((a, i) => a + i.price * i.qty, 0);
+      document.getElementById('cart-total-amt').textContent = '₹' + total.toLocaleString('en-IN');
+      footer.style.display = 'block';
+    }
+  }
+  function openCart() {
+    document.getElementById('cart-panel').classList.add('open');
+    document.getElementById('overlay').classList.add('active');
+  }
+  function closeCart() {
+    document.getElementById('cart-panel').classList.remove('open');
+    document.getElementById('overlay').classList.remove('active');
+  }
+
+  // ─── MODAL ───
+  function openModal() {
+    document.getElementById('signin-modal').classList.add('active');
+  }
+  function closeModal() {
+    document.getElementById('signin-modal').classList.remove('active');
+  }
+  function switchTab(tab, el) {
+    document.querySelectorAll('.modal-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('signin-form').style.display = tab === 'signin' ? 'flex' : 'none';
+    document.getElementById('signup-form').style.display = tab === 'signup' ? 'flex' : 'none';
+  }
+  document.getElementById('signin-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // ─── FAQ ───
+  function toggleFaq(btn) {
+    const ans = btn.nextElementSibling;
+    const isOpen = ans.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q span').forEach(s => s.textContent = '＋');
+    if (!isOpen) {
+      ans.classList.add('open');
+      btn.querySelector('span').textContent = '－';
+    }
+  }
+</script>
+</body>
+</html>
+garment-website.html
+Displaying garment-website.html.
